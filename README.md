@@ -2,7 +2,7 @@
 
 I've been an avid Spotify user since 2016 and what I always loved about Spotify was their song recommendation algorithms. Whether it be from the "radio" feature or the "discovery weekly" auto-generated playlist, Spotify always had a knack for finding the songs that best suit my music preferences. I knew that Spotify has collected tons of listening data so I wanted to see if I could use my data to explore my own preferences and maybe attempt to have a try at creating a model to predict songs myself.
 
-After obtaining my data through a JSON drop I joined it with another dataset I found on Kaggle.com that contained all the numberical traits of over 200,000 songs on Spotify. I cleaned the data and performed exploratory analysis to better understand my music taste. From this analysis I decided that songs with over 4 plays would be considered a song that fit my music taste.
+After obtaining my data through a JSON drop I joined it with another dataset I found on Kaggle.com that contained all the numerical traits of over 200,000 songs on Spotify. I cleaned the data and performed exploratory analysis to better understand my listening history and determine what songs would be considered within my music taste. From this analysis, I decided that songs with over 4 plays would be considered a song that fit my music taste.
 
 Before trying to create a prediction model I balanced the dataset using imblearn SMOTE oversampling. Then when the data is balanced I fitted linear regression, random forest, and XGBclassifier models and determined accuracy of predictions with F1 score. After training the model I then used it to predict a list of songs that could potentially fit my music taste based on the features.  
 
